@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-webplossy no-avif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>prj</title>
+
+    <script>
+      var imageData = {
+        avif: "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=",
+        webp: "data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+      };
+
+      // Функция проверки написана на основе документации Google:
+      // https://developers.google.com/speed/webp/faq#in_your_own_javascript
+
+      function checkImageFormatSupport(imageFormat, callback) {
+        var img = new Image();
+
+        img.src = imageData[imageFormat];
+
+        img.onload = function () {
+          var result = img.width > 0 && img.height > 0;
+          callback(result);
+        };
+        img.onerror = function () {
+          callback(false);
+        };
+      }
+
+      // Проверяем поддержку WebP Lossy (сжатие с потерями)
+
+      checkImageFormatSupport("webp", function (isWebpLossySupported) {
+        if (isWebpLossySupported) {
+          document.documentElement.className =
+            document.documentElement.className.replace(
+              "no-webplossy",
+              "webplossy"
+            );
+        }
+      });
+
+      // Проверяем поддержку AVIF
+
+      checkImageFormatSupport("avif", function (isAvifSupported) {
+        if (isAvifSupported) {
+          document.documentElement.className =
+            document.documentElement.className.replace("no-avif", "avif");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header class="sectionHeader">
+      <div class="sectionInner">
+        <img src="" alt="" class="sectionHeader_logo" />
+        <nav class="sectionHeader_nav">
+          <a href="#" class="sectionHeader_nav-item"></a>
+          <a href="#" class="sectionHeader_nav-item"></a>
+          <a href="#" class="sectionHeader_nav-item"></a>
+          <a href="#" class="sectionHeader_nav-item"></a>
+          <a href="#" class="sectionHeader_nav-item"></a>
+          <a href="#" class="sectionHeader_nav-item"></a>
+          <button class="btn sectionHeader_nav-btn"></button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="sectionBanner">
+      <div class="sectionInner">
+        <h2 class="sectionBanner_title"></h2>
+        <h4 class="sectionBanner_subTitle"></h4>
+        <span class="sectionBanner_price"></span>
+        <div class="sectionBanner_btns">
+          <button class="btnFill sectionBanner_btns-btn"></button>
+          <button class="btnFill sectionBanner_btns-whatsApp"></button>
+        </div>
+        <img src="" alt="" class="sectionBanner_doc" />
+      </div>
+    </section>
+
+    <section class="sectionPartners">
+      <div class="sectionInner">
+        <h3 class="sectionPartners_title"></h3>
+        slider
+      </div>
+    </section>
+
+    <section class="sectionAbout">
+      <div class="sectionInner">
+        <h3 class="sectionAbout_title"></h3>
+        <p class="sectionAbot_paragraph"></p>
+        <p class="sectionAbot_paragraph"></p>
+        <p class="sectionAbot_paragraph"></p>
+        <p class="sectionAbot_paragraph"></p>
+        <img src="" alt="" class="sectionAbout_img">
+      </div>
+    </section>
+
+    <section class="sectionWhyUs">
+      <div class="sectionInner">
+        <h3 class="sectionWhyUs_title"></h3>
+        <div class="sectionWhyUs_cards">
+          <div class="sectionWhyUs_cards-item">
+            <img src="" alt="" class="sectionWhyUs_cards-item-img" />
+            <h6 class="sectionWhyUs_cards-item-title"></h6>
+            <p class="sectionWhyUs_cards-item-text"></p>
+          </div>
+          <div class="sectionWhyUs_cards-item">
+            <img src="" alt="" class="sectionWhyUs_cards-item-img" />
+            <h6 class="sectionWhyUs_cards-item-title"></h6>
+            <p class="sectionWhyUs_cards-item-text"></p>
+          </div>
+          <div class="sectionWhyUs_cards-item">
+            <img src="" alt="" class="sectionWhyUs_cards-item-img" />
+            <h6 class="sectionWhyUs_cards-item-title"></h6>
+            <p class="sectionWhyUs_cards-item-text"></p>
+          </div>
+          <div class="sectionWhyUs_cards-item">
+            <img src="" alt="" class="sectionWhyUs_cards-item-img" />
+            <h6 class="sectionWhyUs_cards-item-title"></h6>
+            <p class="sectionWhyUs_cards-item-text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionActivities">
+      <div class="sectionInner">
+        <h3 class="sectionActivities_title"></h3>
+        <div class="sectionActivities_list">
+          <div class="sectionActivities_list-item">
+            <img src="" alt="" class="sectionActivities_list-item-img" />
+            <h6 class="sectionActivities_list-item-title"></h6>
+            <p class="sectionActivities_list-item-text"></p>
+            <button class="btnFill sectionActivities_list-item-btn"></button>
+          </div>
+          <div class="sectionActivities_list-item">
+            <img src="" alt="" class="sectionActivities_list-item-img" />
+            <h6 class="sectionActivities_list-item-title"></h6>
+            <p class="sectionActivities_list-item-text"></p>
+            <button class="btnFill sectionActivities_list-item-btn"></button>
+          </div>
+          <div class="sectionActivities_list-item">
+            <img src="" alt="" class="sectionActivities_list-item-img" />
+            <h6 class="sectionActivities_list-item-title"></h6>
+            <p class="sectionActivities_list-item-text"></p>
+            <button class="btnFill sectionActivities_list-item-btn"></button>
+          </div>
+          <div class="sectionActivities_list-item">
+            <img src="" alt="" class="sectionActivities_list-item-img" />
+            <h6 class="sectionActivities_list-item-title"></h6>
+            <p class="sectionActivities_list-item-text"></p>
+            <button class="btnFill sectionActivities_list-item-btn"></button>
+          </div>
+          <div class="sectionActivities_list-item">
+            <img src="" alt="" class="sectionActivities_list-item-img" />
+            <h6 class="sectionActivities_list-item-title"></h6>
+            <p class="sectionActivities_list-item-text"></p>
+            <button class="btnFill sectionActivities_list-item-btn"></button>
+          </div>
+          <div class="sectionActivities_list-item">
+            <img src="" alt="" class="sectionActivities_list-item-img" />
+            <h6 class="sectionActivities_list-item-title"></h6>
+            <p class="sectionActivities_list-item-text"></p>
+            <button class="btnFill sectionActivities_list-item-btn"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionHowLong">
+      <div class="sectionInner">
+        <h3 class="sectionHowLong_title"></h3>
+        <p class="sectionHowLong_text"></p>
+        <div class="sectionHowLong_stats">
+          <div class="sectionHowLong_stats-item">
+            <span class="sectionHowLong_stats-item-title"></span>
+            <span class="sectionHowLong_stats-item-text"></span>
+          </div>
+          <div class="sectionHowLong_stats-item">
+            <span class="sectionHowLong_stats-item-title"></span>
+            <span class="sectionHowLong_stats-item-text"></span>
+          </div>
+          <div class="sectionHowLong_stats-item">
+            <span class="sectionHowLong_stats-item-title"></span>
+            <span class="sectionHowLong_stats-item-text"></span>
+          </div>
+          <img src="" alt="" class="sectionHowLong_stats-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionSecondBanner">
+      <div class="sectionInner">
+        <img src="" alt="" class="sectionSecondBanner-logo" />
+        <h3 class="sectionSecondBanner_title"></h3>
+        <h4 class="sectionSecondBanner_subTitle"></h4>
+        <button class="btnFill sectionSecondBanner_btns-btn"></button>
+        <img src="" alt="" class="sectionSecondBanner_doc" />
+      </div>
+    </section>
+
+    <section class="sectionPromotions">
+      <div class="sectionInner">
+        <h3 class="sectionPromotions_title"></h3>
+        <div class="sectionPromotions_items">
+          <div class="sectionPromotions_items-item">
+            <span class="sectionPromotions_items-item-title"></span>
+            <span class="sectionPromotions_items-item-text"></span>
+            <span class="sectionPromotions_items-item-price"></span>
+            <button class="btnFill sectionPromotions_items-item-btn"></button>
+          </div>
+          <div class="sectionPromotions_items-item">
+            <span class="sectionPromotions_items-item-title"></span>
+            <span class="sectionPromotions_items-item-text"></span>
+            <span class="sectionPromotions_items-item-price"></span>
+            <button class="btnFill sectionPromotions_items-item-btn"></button>
+          </div>
+          <div class="sectionPromotions_items-item">
+            <span class="sectionPromotions_items-item-title"></span>
+            <span class="sectionPromotions_items-item-text"></span>
+            <span class="sectionPromotions_items-item-price"></span>
+            <button class="btnFill sectionPromotions_items-item-btn"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionForm">
+      <div class="sectionInner">
+        <h3 class="sectionForm_title"></h3>
+        <form action="" class="sectionForm_form">
+          <div class="sectionForm_form-inputField">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="sectionForm_form-inputField-item"
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="sectionForm_form-inputField-item"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="sectionForm_form-inputField-item"
+            />
+            <button
+              type="submit"
+              class="btnFill sectionForm_form-inputField-btn"
+            ></button>
+          </div>
+          <input
+            type="checkbox"
+            name="politic"
+            id="politic"
+            class="sectionForm_form-checkboxPolitic"
+          />
+        </form>
+      </div>
+    </section>
+
+    <footer class="sectionFooter">
+      <div class="sectionInner">
+        <div class="sectionFooter_fisrt">
+          <div class="sectionFooter_firstCol">
+            <img src="" alt="" class="sectionFooter_firstCol-logo" />
+            <location class="sectionFooter_firstCol-_location"></location>
+            <a href="tel:+" class="sectionFooter_firstCol-phone"></a>
+          </div>
+          <div class="sectionFooter_secondCol">
+            <h6 class="sectionFooter_Col-title"></h6>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+          </div>
+          <div class="sectionFooter_thirdCol">
+            <h6 class="sectionFooter_Col-title"></h6>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+            <div class="sectionFooter_Col-item"></div>
+          </div>
+          <div class="sectionFooter_fourthCol">
+            <h6 class="sectionFooter_Col-title"></h6>
+            <div class="sectionFooter_Col-item"></div>
+          </div>
+          <div class="sectionFooter_contactsCol">
+            <h6 class="sectionFooter_Col-title"></h6>
+            <a href="mailto:" class="sectionFooter_contactsCol-email"></a>
+            <div class="sectionFooter_contactsCol-social">
+              <a href="" class="sectionFooter_contactsCol-social-item"></a>
+              <a href="" class="sectionFooter_contactsCol-social-item"></a>
+              <a href="" class="sectionFooter_contactsCol-social-item"></a>
+              <a href="" class="sectionFooter_contactsCol-social-item"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sectionFooter_second">
+        <div class="sectonFooter_coopyright">
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
