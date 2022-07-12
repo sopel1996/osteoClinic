@@ -4,33 +4,111 @@
     @return $remValue;
 }
 
-// @mixin RubikRegular($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 400;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikMedium($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 500;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikSemiBold($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 600;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikBold($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 700;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikBlackItalic($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 900;
-//     font-size  : toRem($size_px);
-//     font-style : italic;
-// }
+@mixin MontserratThin($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratThinItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratExtraLight($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratExtraLightItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratLight($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratLightItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratRegular($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratRegularItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratMedium($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratMediumItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratSemiBold($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratSemiBoldItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratBold($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratBoldItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratExtraBold($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratExtraBoldItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin MontserratBlack($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin MontserratBlackItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}

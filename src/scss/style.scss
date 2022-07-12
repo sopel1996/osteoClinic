@@ -14,17 +14,20 @@
    }
 */
 
-@import 'color';
-
-body {
-   background: $primary-color-dark;
-}
-h1 {
-   color: $secondary-text-color;
-   &:hover {
-      background: $primary-color-text;
-      cursor: pointer;
-      border: 1px solid $primary-color;
-   }
-}
-
+@import 'color.scss';
+@import 'fonts.scss';
+@import 'general.scss';
+// @import 'mobMenu.scss';
+// @import 'sectionHeader.scss';
+// @import 'sectionBanner.scss';
+// @import 'sectionModels.scss';
+// @import 'sectionBenefits.scss';
+// @import 'sectionPeculiarities.scss';
+// @import 'sectionAboutUs.scss';
+// @import 'sectionWantSee.scss';
+// @import 'sectionTable.scss';
+// @import 'sectionWhyUs.scss';
+// @import 'sectionGetOffer.scss';
+// @import 'sectionMap.scss';
+// @import 'sectionFooter.scss';
+// @import 'sectionModels_new.scss';
