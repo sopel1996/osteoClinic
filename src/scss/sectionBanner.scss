@@ -1,20 +1,54 @@
+@import 'color.scss';
+@import 'mixins.scss';
 .sectionBanner {
-}
-.sectionInner {
-}
-.sectionBanner_title {
-}
-.sectionBanner_subTitle {
-}
-.sectionBanner_price {
-}
-.sectionBanner_btns {
-}
-.btnFill {
-}
-.sectionBanner_btns-btn {
-}
-.sectionBanner_btns-whatsApp {
-}
-.sectionBanner_doc {
+    background: #fff url(../img/png/firstBannerBg.png) left bottom no-repeat;
+    height: 500px;
+    .sectionInner {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .sectionBanner_title {
+        @include MontserratSemiBold(56);
+        color: $primary-color-dark;
+        margin: 0 0 16px 0;
+    }
+    .sectionBanner_subTitle {
+        margin: 0 0 24px 0;
+        @include MontserratRegular(24);
+        line-height: 32px;
+        color: $primary-color-gray;
+    }
+    .sectionBanner_price {
+        margin: 0 0 40px 0;
+        @include MontserratMedium(32);
+        line-height: 40px;
+        color: $primary-color-dark;
+    }
+    .sectionBanner_btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        .sectionBanner_btns-btn {
+            margin: 0 8px 0 0;
+            line-height: 24px;
+        }
+        .sectionBanner_btns-whatsApp {
+            padding: 16px 24px;
+            background-color: $secondary-btn-color;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .sectionBanner_doc {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }

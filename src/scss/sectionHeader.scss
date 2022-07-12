@@ -1,14 +1,36 @@
+@import 'color.scss';
+@import 'mixins.scss';
 .sectionHeader {
-}
-.sectionInner {
-}
-.sectionHeader_logo {
-}
-.sectionHeader_nav {
-}
-.sectionHeader_nav-item {
-}
-.btn {
-}
-.sectionHeader_nav-btn {
+    background-color: #fff;
+    padding: 40px 0 53px 0;
+    .sectionInner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_logo {
+    }
+    &_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-item {
+            margin: 0 16px 0 0;
+            color: $primary-color-dark;
+            text-decoration: none;
+            @include MontserratMedium(16);
+            transition: color 0.5s;
+            &:active,
+            &:visited{
+                color: $primary-color-dark;
+            }
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    &_nav-btn {
+    }
 }

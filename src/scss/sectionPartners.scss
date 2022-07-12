@@ -1,6 +1,13 @@
 .sectionPartners {
-}
-.sectionInner {
-}
-.sectionPartners_title {
+    padding: 32px 0 ;
+    .sectionInner {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sectionPartners_title {
+        @include MontserratSemiBold(32);
+        line-height: 40px;
+        color: $primary-color-dark;
+    }
 }
