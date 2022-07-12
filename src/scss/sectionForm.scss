@@ -1,18 +1,54 @@
 .sectionForm {
-}
-.sectionInner {
-}
-.sectionForm_title {
-}
-.sectionForm_form {
-}
-.sectionForm_form-inputField {
-}
-.sectionForm_form-inputField-item {
-}
-.btnFill {
-}
-.sectionForm_form-inputField-btn {
-}
-.sectionForm_form-checkboxPolitic {
+    margin: 64px 0 96px 0;
+    .sectionInner {
+        padding: 40px 32px;
+        background: linear-gradient(127.33deg, #FDD9F1 28.37%, #BFDBF6 101.59%), #F2F6FF;
+        border-radius: 16px;
+    }
+    &_title {
+        @include MontserratSemiBold(32);
+        line-height: 40px;
+        color: $primary-color-dark;
+        margin: 0 0 16px 0;
+    }
+    &_form {
+        border-radius: 16px;
+        background-color: #fff;
+        padding: 24px;
+        &-inputField {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 8px 0 ;
+            &-item {
+                width: 258px;
+                height: 54px;
+                border: 1px solid #D1D1D1;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 15px;
+
+            }
+            .btnFill {
+            }
+            &-btn {
+                padding: 15px 67px;
+                line-height: 24px;
+            }
+        }
+        &-checkboxPolitic {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            @include MontserratRegular(14);
+            line-height: 18px;
+            input{
+                margin: 0 8px 0 0;
+            }
+        }
+    }
 }

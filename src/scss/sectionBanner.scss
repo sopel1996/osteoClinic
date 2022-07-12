@@ -2,6 +2,7 @@
 @import 'mixins.scss';
 .sectionBanner {
     background: #fff url(../img/png/firstBannerBg.png) left bottom no-repeat;
+    background-size: 100% 100%;
     height: 500px;
     .sectionInner {
         height: 100%;
@@ -15,12 +16,15 @@
         @include MontserratSemiBold(56);
         color: $primary-color-dark;
         margin: 0 0 16px 0;
+        width: 740px;
     }
     .sectionBanner_subTitle {
         margin: 0 0 24px 0;
         @include MontserratRegular(24);
         line-height: 32px;
         color: $primary-color-gray;
+        width: 800px;
+
     }
     .sectionBanner_price {
         margin: 0 0 40px 0;
@@ -50,5 +54,26 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+
+    &.aboutUs{
+        background-image: url(../img/png/bannerBgAboutUs.png);
+        .firstCol{
+            width: 48%;
+        }
+        .slider{
+            width: 48%;
+            
+        }
+        .sectionBanner_title,
+        .sectionBanner_subTitle{
+            width: 100%;
+        }
+        .sectionBanner_text{
+            margin: 0 0 24px 0;
+            @include MontserratRegular(16);
+            line-height: 24px;
+            color: $primary-color-gray;
+        }
     }
 }

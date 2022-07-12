@@ -1,18 +1,51 @@
 .sectionHowLong {
-}
-.sectionInner {
-}
-.sectionHowLong_title {
-}
-.sectionHowLong_text {
-}
-.sectionHowLong_stats {
-}
-.sectionHowLong_stats-item {
-}
-.sectionHowLong_stats-item-title {
-}
-.sectionHowLong_stats-item-text {
-}
-.sectionHowLong_stats-img {
+    .sectionInner {
+       
+    }
+    &_title {
+        @include MontserratSemiBold(24);
+        line-height: 32px;
+        color: $primary-color-dark;
+        margin: 0 0 16px 0;
+        width: 860px
+    }
+    &_text {
+        @include MontserratRegular(24);
+        line-height: 32px;
+        color: $primary-color-dark;
+        margin: 0 0 32px 0;
+        width: 860px
+    }
+    &_stats {
+        background: linear-gradient(0deg, #F2F6FF, #F2F6FF), linear-gradient(98.64deg, #E9F2F4 15.52%, #ECE6F2 84.08%);
+        border-radius: 32px;
+        padding: 77px 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 240px;
+            margin: 0 60px 0 0;
+            &-title {
+                @include MontserratMedium(22);
+                color: $primary-color-dark;
+            }
+            &-text {
+                @include MontserratRegular(16);
+                line-height: 24px;
+                color: $primary-color-gray;
+            }
+        }
+        &-img {
+            position: absolute;
+            top: 27px;
+            right: 32px;
+        }
+    }
 }

@@ -1,0 +1,37 @@
+.sectionTextAboutUs {
+    .sectionInner {
+    }
+    &_title {
+        @include MontserratSemiBold(40);
+        line-height: 48px;
+        color: $primary-color-dark;
+        margin: 0 0 40px 0; 
+    }
+    &_subTitle {
+        @include MontserratMedium(24);
+        line-height: 32px;
+        color: $primary-color-gray;
+        margin: 0 0 8px 0
+    }
+    &_text {
+        @include MontserratRegular(16);
+        line-height: 24px;
+        color: $primary-color-gray;
+        margin: 0 0 16px 0;
+    }
+    .colText {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 32px 0 ;
+        &_item {
+            width: 48%;
+            border-left: 4px solid #925ADD;
+            padding: 0 0 0 16px;
+            @include MontserratRegular(16);
+            line-height: 24px;
+            color: $primary-color-gray;
+        }
+    }
+}

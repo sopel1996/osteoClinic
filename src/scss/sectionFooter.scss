@@ -1,38 +1,120 @@
 .sectionFooter {
-}
-.sectionInner {
-}
-.sectionFooter_fisrt {
-}
-.sectionFooter_firstCol {
-}
-.sectionFooter_firstCol-logo {
-}
-.sectionFooter_firstCol-_location {
-}
-.sectionFooter_firstCol-phone {
-}
-.sectionFooter_secondCol {
-}
-.sectionFooter_Col-title {
-}
-.sectionFooter_Col-item {
-}
-.sectionFooter_thirdCol {
-}
-.sectionFooter_fourthCol {
-}
-.sectionFooter_contactsCol {
-}
-.sectionFooter_contactsCol-email {
-}
-.sectionFooter_contactsCol-social {
-}
-.sectionFooter_contactsCol-social-item {
-}
-.sectionFooter_contactsCol-social-item-img {
-}
-.sectionFooter_second {
-}
-.sectonFooter_coopyright {
+    background-color: #EEF3F8;
+    .sectionInner {
+    }
+    &_fisrt {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 56px 0;
+    }
+    &_firstCol {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &-logo {
+            margin: 0 0 32px 0;
+        }
+        &-location {
+            margin: 0 0 16px 0;
+            @include MontserratMedium(14);
+            line-height: 18px;
+            color: $primary-color-dark;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            &::before{
+                content: url(../img/svg/mapPin.svg);
+                margin: 0 8px 0 0;
+                display: block;
+                width: 18px;
+                height: 18px;
+            }
+        }
+        &-phone {
+            @include MontserratMedium(14);
+            line-height: 18px;
+            color: $primary-color-dark;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            &::before{
+                content: url(../img/svg/phoneIcon.svg);
+                margin: 0 8px 0 0;
+                display: block;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    &_secondCol {
+    }
+    &_Col-title {
+        @include MontserratSemiBold(16);
+        line-height: 24px;
+        color: $primary-color-dark;
+        margin: 0 0 24px 0;
+        
+    }
+    &_Col-item {
+        @include MontserratMedium(14);
+        line-height: 18px;
+        color: $primary-color-dark;
+        margin: 0 0 16px 0;
+        color: $primary-color-gray;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &_thirdCol {
+    }
+    &_fourthCol {
+    }
+    &_contactsCol {
+        &-email {
+            margin: 0 0 16px 0;
+            @include MontserratMedium(14);
+            line-height: 18px;
+            color: $primary-color-dark;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            justify-content: flex-start;
+            &::before{
+                content: url(../img/svg/mailIcon.svg);
+                margin: 0 8px 0 0;
+                display: block;
+                width: 18px;
+                height: 18px;
+            }
+        }
+        &-social {
+            &-item {
+                text-decoration: none;
+                &-img {
+                }
+            }
+        }
+    }
+
+
+    .sectionFooter_second {
+        @include MontserratRegular(14);
+        line-height: 18px;
+        background-color: #262B47;
+        color: #fff;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sectonFooter_coopyright {
+    }
 }

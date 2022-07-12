@@ -1,18 +1,64 @@
-.sectionInner {
-}
-.sectionPromotions_title {
-}
-.sectionPromotions_items {
-}
-.sectionPromotions_items-item {
-}
-.sectionPromotions_items-item-title {
-}
-.sectionPromotions_items-item-text {
-}
-.sectionPromotions_items-item-price {
-}
-.btnFill {
-}
-.sectionPromotions_items-item-btn {
+.sectionPromotions {
+
+    .sectionInner {}
+
+    &_title {
+        @include MontserratSemiBold(40);
+        line-height: 48px;
+        color: $primary-color-dark;
+        margin: 0 0 16px 0;
+    }
+
+    &_items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-item {
+            width: calc(100% / 3 - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            min-height: 400px;
+            background: linear-gradient(168.86deg, #67ABC6 3.09%, #A6DEEC 96.73%);
+            border-radius: 8px;
+            padding: 32px 24px;
+            color: #fff;
+
+            &-title {
+                @include MontserratSemiBold(32);
+                line-height: 40px;
+            }
+            
+            &-text {
+                @include MontserratMedium(16);
+                line-height: 24px;
+            }
+            
+            &-price {
+                @include MontserratSemiBold(32);
+                line-height: 40px;
+            }
+            
+            &-btn {
+                width: 100%;
+                background-color: #fff;
+                color: $primary-color-dark;
+                &:hover{
+                    color: darken($primary-color-dark,20);
+
+                }
+            }
+
+            &:nth-child(2){
+                background: linear-gradient(168.86deg, #F36485 3.09%, #FFBED0 96.73%);
+            }
+            &:nth-child(3){
+                background: linear-gradient(95.59deg, #579CFF 0%, #4DB7FF 100.25%), linear-gradient(168.86deg, #79CBEB 3.09%, #2C64F5 96.73%);
+            }
+        }
+    }
+
+
 }

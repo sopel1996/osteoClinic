@@ -1,20 +1,55 @@
 .sectionActivities {
-}
-.sectionInner {
-}
-.sectionActivities_title {
-}
-.sectionActivities_list {
-}
-.sectionActivities_list-item {
-}
-.sectionActivities_list-item-img {
-}
-.sectionActivities_list-item-title {
-}
-.sectionActivities_list-item-text {
-}
-.btnFill {
-}
-.sectionActivities_list-item-btn {
+    .sectionInner {
+    }
+    &_title {
+        @include MontserratSemiBold(40);
+        line-height: 48px;
+        color: $primary-color-dark;
+        margin: 0 0 40px 0; 
+    }
+    &_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        &-item {
+            width: calc(100% / 3 - 15px);
+            min-height: 540px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            background-color: $card-color;
+            margin: 0 0 15px 0;
+            border-radius: 8px;
+            &-img {
+                border-radius: 8px;
+                margin: 0 0 16px 0
+            }
+            &-title {
+                @include MontserratSemiBold(24);
+                line-height: 32px;
+                color: $primary-color-dark;
+                margin: 0 0 16px 0
+            }
+            &-text {
+                @include MontserratRegular(16);
+                line-height: 24px;
+                color: $primary-color-dark;
+            }
+            &-btn {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                width: calc(100% - 30px);
+            }
+
+            &:hover{
+                background: linear-gradient(0deg, #DEF4EF, #DEF4EF), linear-gradient(0deg, #E3F4F9, #E3F4F9), linear-gradient(127.33deg, #C0F8EC 28.37%, #BFDBF6 101.59%), #F2F6FF;
+            }
+        }
+    }
 }
