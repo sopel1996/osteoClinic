@@ -16,6 +16,62 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+          /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+            position: relative;
+            display: inline-block;
+            &:hover{
+                .dropmenu{
+                    &:after{
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+        .dropmenu{
+            display: flex;;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &:after{
+                transition: 0.5s;
+                content: url(../img/svg/dropInactive.svg);
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+
+            }
+          }
+          
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          /* Links inside the dropdown */
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #ddd;}
+          
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+          .dropdown:hover .dropbtn {background-color: #3e8e41;}
+          
+
         &-item {
             margin: 0 16px 0 0;
             color: $primary-color-dark;

@@ -1,128 +1,247 @@
 @import 'color.scss';
 @import 'mixins.scss';
+
 .sectionBanner {
-    background: #fff url(../img/png/firstBannerBg.png) left bottom no-repeat;
+    background     : #fff url(../img/png/firstBannerBg.png) left bottom no-repeat;
     background-size: 100% 100%;
-    height: 500px;
+    height         : 500px;
+
     .sectionInner {
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        height         : 100%;
+        position       : relative;
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
         justify-content: center;
     }
-    &_date{
-        border: 1px solid $primary-color-gray;
+
+    &_date {
+        border       : 1px solid $primary-color-gray;
         border-radius: 4px;
-        padding: 12px 16px;
+        padding      : 12px 16px;
         @include MontserratSemiBold(12);
-        color: $primary-color-gray;
+        color : $primary-color-gray;
         margin: 0 0 16px 0
     }
+
     &_title {
         @include MontserratSemiBold(56);
-        color: $primary-color-dark;
+        color : $primary-color-dark;
         margin: 0 0 16px 0;
-        width: 740px;
+        width : 740px;
     }
+
     &_subTitle {
         margin: 0 0 24px 0;
         @include MontserratRegular(24);
         line-height: 32px;
-        color: $primary-color-gray;
-        width: 800px;
+        color      : $primary-color-gray;
+        width      : 800px;
 
     }
+
     &_text {
         margin: 0 0 40px 0;
         @include MontserratRegular(16);
         line-height: 24px;
-        color: $primary-color-dark;
-        width: 570px;
+        color      : $primary-color-dark;
+        width      : 570px;
     }
+
     &_price {
         margin: 0 0 40px 0;
         @include MontserratMedium(32);
         line-height: 40px;
-        color: $primary-color-dark;
+        color      : $primary-color-dark;
     }
+
     &_btns {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
         justify-content: flex-start;
+
         &-btn {
-            margin: 0 8px 0 0;
+            margin     : 0 8px 0 0;
             line-height: 24px;
         }
+
         &-whatsApp {
-            padding: 16px 24px;
+            padding         : 16px 24px;
             background-color: $secondary-btn-color;
-            img{
-                width: 24px;
+
+            img {
+                width : 24px;
                 height: 24px;
             }
         }
     }
+
     &_doc {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom  : 0;
+        right   : 0;
     }
 
-    &.aboutUs{
+    &.aboutUs {
         padding: 64px 0;
-        height: auto;
-        .sectionInner{
-            flex-direction: row;
+        height : auto;
+
+        .sectionInner {
+            flex-direction : row;
             justify-content: space-between;
         }
-        .slider{
+
+        .slider {
             height: 100%;
         }
-        .mySwiper2{
+
+        .mySwiper2 {
             height: 285px;
             margin: 0 0 24px 0;
-            .swiper-slide{
+
+            .swiper-slide {
                 border-radius: 8px;
-                img{
+
+                img {
                     border-radius: 8px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                    width        : 100%;
+                    height       : 100%;
+                    object-fit   : cover;
                 }
             }
         }
-        .mySwiper{
+
+        .mySwiper {
             height: 110px;
-            .swiper-slide{
+
+            .swiper-slide {
                 border-radius: 8px;
-                img{
+
+                img {
                     border-radius: 8px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                    width        : 100%;
+                    height       : 100%;
+                    object-fit   : cover;
                 }
             }
         }
+
         background-image: url(../img/png/bannerBgAboutUs.png);
-        .firstCol{
+
+        .firstCol {
             width: 48%;
         }
-        .slider{
+
+        .slider {
             width: 48%;
-            
+
         }
+
         .sectionBanner_title,
-        .sectionBanner_subTitle{
+        .sectionBanner_subTitle {
             width: 100%;
         }
-        .sectionBanner_text{
+
+        .sectionBanner_text {
             margin: 0 0 24px 0;
             @include MontserratRegular(16);
             line-height: 24px;
-            color: $primary-color-gray;
+            color      : $primary-color-gray;
         }
     }
+
+    &_yourBook {
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
+        justify-content: space-between;
+
+        &-title {
+            @include MontserratMedium(24);
+            line-height: 32px;
+            color      : $primary-color-dark;
+            margin: 0 0 16px 0;
+        }
+
+        &-book {
+            width     : 470px;
+            height    : 218px;
+            background: transparent url(../img/png/yourBook.png) 50% 50%/contain no-repeat;
+            position  : relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 32px 24px;
+            margin: 0 0 24px 0;
+            &-docName {
+                @include MontserratSemiBold(16);
+                line-height: 24px;
+                color      : #fff;
+            }
+
+            &-docSpec {
+                @include MontserratMedium(16);
+                line-height: 24px;
+                color      : #fff;
+                margin     : 0 0 30px 0;
+            }
+
+            &-time {
+                background   : rgba(39, 153, 249, 0.64);
+                border-radius: 8px;
+                @include MontserratSemiBold(16);
+                line-height    : 24px;
+                color          : #fff;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                padding        : 8px 16px;
+            }
+
+            &-img {
+                position: absolute;
+                right   : 0;
+                bottom  : 37px;
+            }
+        }
+
+        &-icons {
+            display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+background: #FFFFFF;
+border-radius: 16px;
+width: 100%;
+            &-title {
+                @include MontserratMedium(16);
+                line-height: 24px;
+                color: $primary-color-dark;
+                margin: 0 0 24px 0;
+            }
+
+            &-items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                &-item {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+.paddingBanner{
+    padding: 64px 132px;
+}
+.w570{
+    width: 570px !important;
+}
+.heightAuto{
+    height: auto;
 }

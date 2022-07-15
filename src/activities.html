@@ -13,16 +13,25 @@
   <body>
     <header class="sectionHeader">
       <div class="sectionInner">
-        <img src="img/png/logo.png" alt="" class="sectionHeader_logo" />
-       <nav class="sectionHeader_nav">
+        <a href="/">
+          <a href="/">
+          <img src="img/png/logo.png" alt="" class="sectionHeader_logo" />
+        </a>
+        </a>
+      <nav class="sectionHeader_nav">
           <a href="aboutUs.html" class="sectionHeader_nav-item">О нас</a>
-          <a href="doctorPage.html" class="sectionHeader_nav-item">Врачи</a>
+          <div class=" dropdown">
+            <a href="doctorPage.html" class="sectionHeader_nav-item dropmenu">
+              Врачи
+            </a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
           <a href="#" class="sectionHeader_nav-item">Лечение</a>
           <a href="learning.html" class="sectionHeader_nav-item">Обучение</a>
-          <a href="promotions.html" class="sectionHeader_nav-item">Акции</a>
-          <a href="contacts.html" class="sectionHeader_nav-item">Контакты</a>
-          <button class="btn sectionHeader_nav-btn">Онлайн запись</button>
-        </nav>
           <a href="promotions.html" class="sectionHeader_nav-item">Акции</a>
           <a href="contacts.html" class="sectionHeader_nav-item">Контакты</a>
           <button class="btn sectionHeader_nav-btn">Онлайн запись</button>
@@ -30,81 +39,41 @@
       </div>
     </header>
 
-    <section class="sectionBanner">
-      <div class="sectionInner">
-        <h2 class="sectionBanner_title">Остеопатический центр Лидии Андреевой</h2>
-        <h4 class="sectionBanner_subTitle">Инновационный метод физиотерапии - лечение без лекарств!
-          Скидка 10% при приобретении абонемента.</h4>
-        <span class="sectionBanner_price">от 3500 ₽</span>
-        <div class="sectionBanner_btns">
-          <button class="btnFill sectionBanner_btns-btn">Получить консультацию</button>
-          <button class="btnFill sectionBanner_btns-whatsApp">
-            <img src="img/svg/whatsAppIcon.svg" alt="">
-          </button>
-        </div>
-        <img src="img/png/doctor.png" alt="" class="sectionBanner_doc" />
-      </div>
-    </section>
+    <section class="sectionBanner margin60 paddingBanner heightAuto">
+      <div class="sectionInner row sb">
+        <span class="w570">
+          
+          <h2 class="sectionBanner_title w570">Запись на приём к лучшим врачам</h2>
+          <h4 class="sectionBanner_subTitle w570">Хороший врач - это специалист широкого профиля, который основываясь на ваших симптомах, поставит верный диагноз и назначит результативное лечение.</h4>
+          <span class="sectionBanner_text w570">На нашем портале вы можете выбрать лучших врачей
+            Если Вам нужен хороший врач, но у вас нет времени самостоятельно сравнивать цены и обзванивать клиники, лучшие платные врачи города всегда к вашим услугам</span>
+            
+          </span>
+        <div class="sectionBanner_yourBook">
+          <div class="sectionBanner_yourBook-title">Ваши записи</div>
+          <div class="sectionBanner_yourBook-book">
+            <div class="sectionBanner_yourBook-book-docName">Рожкова Евгения Валерьевна</div>
+            <div class="sectionBanner_yourBook-book-docSpec">Остеопат</div>
+            
+            <div class="sectionBanner_yourBook-book-time">Февраль 24, 9:00 утро</div>
 
-    <section class="sectionPartners">
-      <div class="sectionInner">
-        <h3 class="sectionPartners_title">Наши партнеры</h3>
-        
-        
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/png/resoLogo.png" alt=""></div>
-            <div class="swiper-slide"><img src="img/png/capitalPolisLogo.png" alt=""></div>
-            <div class="swiper-slide"><img src="img/png/KinezioLogo.png" alt=""></div>
-            <div class="swiper-slide"><img src="img/png/RGSLogo.png" alt=""></div>
-            <div class="swiper-slide"><img src="img/png/MAOOLogo.png" alt=""></div>
+            <img src="img/png/bookDoc.png" alt="" class="sectionBanner_yourBook-book-img">
           </div>
-        </div>
-
-
-      </div>
-    </section>
-
-    <section class="sectionAbout">
-      <div class="sectionInner">
-        <h3 class="sectionAbout_title">Центр остеопатии «Лидии Андреевой»</h3>
-        <p class="sectionAbout_paragraph">
-          <span class="bold">Медицинский центр «ОСТЕОМЕД» был открыт в 2008 году в Санкт-Петербурге и уже в сентябре 2009 признан лучшей остеопатической клиникой в России. </span>
-          <br>
-          Имеется лицензия на осуществление медицинской деятельности в направлении остеопатии.
-        </p>
-        <span class="sectionAbout_paragraph regular">
-          На данный момент количество пациентов, оставшихся довольными результатами обращения в клинику остеопатии «ОСТЕОМЕД», достигло отметки в <b>36 000.</b>
-        </span>
-        <p class="sectionAbout_paragraph regular">Специалисты остеопатического центра не останавливаются на достигнутом — они регулярно совершенствуют свои знания, проходя курсы повышения квалификации, посещая международные конференции, реализуя обмен опытом и знаниями с европейскими врачами остеопатами. Средний стаж, который имеет доктор нашей клиники — десять лет.</p>
-        <p class="sectionAbout_paragraph"><b>Средний стаж, который имеет доктор нашей клиники — десять лет.</p></p>
-        <img src="img/svg/centerImg.svg" alt="" class="sectionAbout_img">
-      </div>
-    </section>
-
-    <section class="sectionWhyUs">
-      <div class="sectionInner">
-        <h3 class="sectionWhyUs_title">Почему мы</h3>
-        <div class="sectionWhyUs_cards">
-          <div class="sectionWhyUs_cards-item">
-            <img src="img/svg/docIcon.svg" alt="" class="sectionWhyUs_cards-item-img" />
-            <h6 class="sectionWhyUs_cards-item-title">Опыт работы 15 лет</h6>
-            <p class="sectionWhyUs_cards-item-text">Это текст. Нажмите, чтобы отредактировать и добавить что-нибудь интересное.</p>
-          </div>
-          <div class="sectionWhyUs_cards-item">
-            <img src="img/svg/medicalIcon.svg" alt="" class="sectionWhyUs_cards-item-img" />
-            <h6 class="sectionWhyUs_cards-item-title">Квалификация врачей</h6>
-            <p class="sectionWhyUs_cards-item-text">Это текст. Нажмите, чтобы отредактировать и добавить что-нибудь интересное.</p>
-          </div>
-          <div class="sectionWhyUs_cards-item">
-            <img src="img/svg/priceIcon.svg" alt="" class="sectionWhyUs_cards-item-img" />
-            <h6 class="sectionWhyUs_cards-item-title">Демократические цены</h6>
-            <p class="sectionWhyUs_cards-item-text">Это текст. Нажмите, чтобы отредактировать и добавить что-нибудь интересное.</p>
-          </div>
-          <div class="sectionWhyUs_cards-item">
-            <img src="img/svg/individualIcon.svg" alt="" class="sectionWhyUs_cards-item-img" />
-            <h6 class="sectionWhyUs_cards-item-title">Индивидуальный подход</h6>
-            <p class="sectionWhyUs_cards-item-text">Работаем со всеми возрастами: дети, подростки, взрослые , пенсионеры</p>
+          <div class="sectionBanner_yourBook-icons">
+            
+            <div class="sectionBanner_yourBook-icons-title">
+              Другие категории
+            </div>
+            <div class="sectionBanner_yourBook-icons-items">
+              <img src="img/svg/icon1.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon2.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon3.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon4.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon5.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon6.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon7.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+              <img src="img/svg/icon8.svg" alt="" class="sectionBanner_yourBook-icons-items-item">
+            </div>
           </div>
         </div>
       </div>
@@ -154,64 +123,6 @@
       </div>
     </section>
 
-    <section class="sectionHowLong">
-      <div class="sectionInner">
-        <h3 class="sectionHowLong_title">14 лет мы заботимся о вашем здоровье</h3>
-        <p class="sectionHowLong_text">На данный момент количество пациентов, оставшихся довольными результатами обращения в клинику остеопатии «ОСТЕОМЕД», достигло отметки в 36 000</p>
-        <div class="sectionHowLong_stats">
-          <div class="sectionHowLong_stats-item">
-            <span class="sectionHowLong_stats-item-title">Заголовок</span>
-            <span class="sectionHowLong_stats-item-text">Работаем с 2006 года </span>
-          </div>
-          <div class="sectionHowLong_stats-item">
-            <span class="sectionHowLong_stats-item-title">10000 пациентов</span>
-            <span class="sectionHowLong_stats-item-text">Ежегодно нашу клинику посещают более </span>
-          </div>
-          <div class="sectionHowLong_stats-item">
-            <span class="sectionHowLong_stats-item-title">Средний стаж 10 лет</span>
-            <span class="sectionHowLong_stats-item-text">Наши специалисты ежегодно стажируются во Франции, Англии и других европейских странах</span>
-          </div>
-          <img src="img/svg/pill.svg" alt="" class="sectionHowLong_stats-img" />
-        </div>
-      </div>
-    </section>
-
-    <section class="sectionSecondBanner">
-      <div class="sectionInner">
-        <img src="img/png/osteoLogo.png" alt="" class="sectionSecondBanner-logo" />
-        <h3 class="sectionSecondBanner_title">Остеопатический центр</h3>
-        <h4 class="sectionSecondBanner_subTitle">Общайтесь с врачом, когда неудобно говорить: на работе или в путешествии. Врач может попросить вас сфотографировать то, что беспокоит.</h4>
-        <button class="btnFill sectionSecondBanner_btns-btn">Запишитесь сейчас</button>
-        <img src="img/png/doctor2.png" alt="" class="sectionSecondBanner_doc" />
-      </div>
-    </section>
-
-    <section class="sectionPromotions">
-      <div class="sectionInner">
-        <h3 class="sectionPromotions_title">Акции месяца</h3>
-        <div class="sectionPromotions_items">
-          <div class="sectionPromotions_items-item">
-            <span class="sectionPromotions_items-item-title">Первый сеанс</span>
-            <span class="sectionPromotions_items-item-text">Медицинский массаж оказывает на организм благотворное физиологическое воздействие: улучшает кровообращение, обмен веществ, положительно влияет на секреторную функцию</span>
-            <span class="sectionPromotions_items-item-price">от 3500 ₽</span>
-            <button class="btnFill sectionPromotions_items-item-btn">Запишитесь сейчас</button>
-          </div>
-          <div class="sectionPromotions_items-item">
-            <span class="sectionPromotions_items-item-title">Первый сеанс</span>
-            <span class="sectionPromotions_items-item-text">Медицинский массаж оказывает на организм благотворное физиологическое воздействие: улучшает кровообращение, обмен веществ, положительно влияет на секреторную функцию</span>
-            <span class="sectionPromotions_items-item-price">от 3500 ₽</span>
-            <button class="btnFill sectionPromotions_items-item-btn">Запишитесь сейчас</button>
-          </div>
-          <div class="sectionPromotions_items-item">
-            <span class="sectionPromotions_items-item-title">Первый сеанс</span>
-            <span class="sectionPromotions_items-item-text">Медицинский массаж оказывает на организм благотворное физиологическое воздействие: улучшает кровообращение, обмен веществ, положительно влияет на секреторную функцию</span>
-            <span class="sectionPromotions_items-item-price">от 3500 ₽</span>
-            <button class="btnFill sectionPromotions_items-item-btn">Запишитесь сейчас</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="sectionForm">
       <div class="sectionInner">
         <form action="" class="sectionForm_form">
@@ -252,6 +163,32 @@
             Cоглашаюсь с политикой конфиденциальности и на получение рассылок
           </label>
         </form>
+      </div>
+    </section>
+
+    <section class="sectionPromotions margin60">
+      <div class="sectionInner">
+        <h3 class="sectionPromotions_title">Акции месяца</h3>
+        <div class="sectionPromotions_items">
+          <div class="sectionPromotions_items-item">
+            <span class="sectionPromotions_items-item-title">Первый сеанс</span>
+            <span class="sectionPromotions_items-item-text">Медицинский массаж оказывает на организм благотворное физиологическое воздействие: улучшает кровообращение, обмен веществ, положительно влияет на секреторную функцию</span>
+            <span class="sectionPromotions_items-item-price">от 3500 ₽</span>
+            <button class="btnFill sectionPromotions_items-item-btn">Запишитесь сейчас</button>
+          </div>
+          <div class="sectionPromotions_items-item">
+            <span class="sectionPromotions_items-item-title">Первый сеанс</span>
+            <span class="sectionPromotions_items-item-text">Медицинский массаж оказывает на организм благотворное физиологическое воздействие: улучшает кровообращение, обмен веществ, положительно влияет на секреторную функцию</span>
+            <span class="sectionPromotions_items-item-price">от 3500 ₽</span>
+            <button class="btnFill sectionPromotions_items-item-btn">Запишитесь сейчас</button>
+          </div>
+          <div class="sectionPromotions_items-item">
+            <span class="sectionPromotions_items-item-title">Первый сеанс</span>
+            <span class="sectionPromotions_items-item-text">Медицинский массаж оказывает на организм благотворное физиологическое воздействие: улучшает кровообращение, обмен веществ, положительно влияет на секреторную функцию</span>
+            <span class="sectionPromotions_items-item-price">от 3500 ₽</span>
+            <button class="btnFill sectionPromotions_items-item-btn">Запишитесь сейчас</button>
+          </div>
+        </div>
       </div>
     </section>
 
