@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 2,
+    slidesPerView: 5,
     loop: false,
     transitionDuration: "12000ms"
 });

@@ -1,0 +1,71 @@
+.sectionMap {
+    margin:  0 0 64px 0 ;
+    .sectionInner {
+        position: relative;
+        padding: 40px 0 0 0;
+        border-top: 1px solid $primary-color-gray;
+
+    }
+    .map{
+        width: 100%;
+        border-radius: 32px;
+        overflow: hidden;
+    }
+
+    &_info {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+
+        padding: 24px 16px;
+        width: 401px;
+        height: 208px;
+        background: #FFFFFF;
+        border: 1px solid #EFF2F9;
+        border-radius: 16px;
+        &-phone {
+            @include MontserratMedium(24);
+            line-height: 32px;
+            color: $primary-color-dark;
+            margin: 0 0 16px 0;
+        }
+        &-address {
+            @include MontserratMedium(14);
+            line-height: 18px;
+            color: $primary-color-gray;
+            margin: 0 0 16px 0;
+            address{
+                @include MontserratMedium(14);
+                line-height: 18px;
+                color: $primary-color-dark;
+            }
+        }
+        &-workTime {
+            .label-workTime {
+                display: block;
+                @include MontserratMedium(14);
+                line-height: 18px;
+                color: $primary-color-gray;
+                margin: 0 0 8px 0;
+            }
+            .workTime {
+                display: block;
+                @include MontserratMedium(14);
+                line-height: 18px;
+                color: $primary-color-dark;
+                font-style: normal;
+                margin: 0 0 16px 0;
+            }
+            .label-dayOff {
+                @include MontserratMedium(14);
+                line-height: 18px;
+                color: $primary-color-gray;
+            }
+            .dayOff {
+                @include MontserratMedium(14);
+                line-height: 18px;
+                color: $primary-color-dark;
+            }
+        }
+    }
+}
