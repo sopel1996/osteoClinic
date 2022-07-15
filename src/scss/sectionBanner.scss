@@ -86,6 +86,13 @@
     &.aboutUs {
         padding: 64px 0;
         height : auto;
+        .swiper-button-prev:after{
+            content: url(../img/svg/prevBtn.svg);
+        }
+        .swiper-button-next:after{
+            content: url(../img/svg/nextBtn.svg);
+
+        }
 
         .sectionInner {
             flex-direction : row;
