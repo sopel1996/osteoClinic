@@ -3,7 +3,6 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     slidesPerView: 5,
     loop: false,
-    transitionDuration: "12000ms"
 });
 
       var swiper1 = new Swiper(".mySwiper", {
@@ -21,4 +20,19 @@ const swiper = new Swiper('.swiper', {
         thumbs: {
           swiper: swiper1,
         },
+      });
+
+
+      const swiper3 = new Swiper('.swiper_3', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: 4,
+        loop: false,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+       
       });
