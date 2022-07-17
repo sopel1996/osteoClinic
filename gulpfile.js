@@ -163,4 +163,4 @@ gulp.task("deploy", function () {
 
 
 //Таск по умолчанию
-gulp.task('default', gulp.series('html', gulp.parallel('styles', 'scripts', 'png2webp','png2avif', 'image_min', 'copy'), 'watch'));
+gulp.task('default', gulp.series('html', gulp.parallel('styles', 'scripts', 'image_min', 'copy'), 'watch'));

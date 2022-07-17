@@ -57,6 +57,13 @@ $inner: 1170px;
     .sectionSecondBanner_doc {
         bottom: 34px;
     }
+    .sectionDoctor_form .sectionDoctor_form-input{
+        font-size: toRem(14);
+    }
+    .sectionDoctor_certeficates .swiper_3 .swiper-slide img{
+        width: 100%;
+        max-width: 260px;
+    }
 }
 @media screen and (max-width: $lg) {
     .burger {display: block;}
@@ -261,6 +268,34 @@ $inner: 1170px;
 
      }
 
+
+     .sectionDoctor_docInfo{
+        flex-direction: column;
+     }
+     .sectionDoctor_docInfo-img{
+        align-self: center;
+        margin: 0 0 30px 0;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+     }
+     .sectionDoctor_form .firstRow,
+     .sectionDoctor_form .secondRow{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+     }
+
+     .sectionDoctor_form .sectionDoctor_form-input{
+        width: 100%;
+        margin: 0 0 16px 0;
+     }
+     .sectionDoctor_onlineCheck{
+        flex-direction: column;
+        align-items: flex-start;
+     }
 }
 @media screen and (max-width: $md) {
     .sectionAbout_img{position: static;}
@@ -326,5 +361,55 @@ $inner: 1170px;
     }
     .margin60 {
         margin: 0 0 815px 0 !important;
+    }
+
+    .sectionDoctor_docInfo-text-spec-item,
+    .sectionDoctor_docInfo-text-subTitle-item{
+        display: block;
+    }
+    .sectionDoctor_docInfo-text-spec-item:before,
+    .sectionDoctor_docInfo-text-subTitle-item::before {
+        content: "·" !important;
+        margin: 0 8px 0 0;
+    }
+    .sectionDoctor_docInfo-text-title{
+        font-size: toRem(28);
+    }
+    .sectionDoctor_docInfo-text-patient-list {
+        list-style-position: inside;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .sectionDoctor_docInfo-text-price-items{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sectionDoctor_docInfo-text-price-items-item{
+        margin: 0 0 8px 0;
+    }
+    .sectionDoctor .sectionDoctorWrap{
+        padding: 16px;
+    }
+    .sectionDoctor_onlineCheck_btn{
+        width: 100%;
+        margin: 8px 0 0 0;
+        padding: 8px;
+    }
+
+    .sectionDoctor_certeficates .swiper_3 .swiper-wrapper {
+        height: 395px;
+    }
+    .sectionContacts_columns{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sectionContacts_columns-item{
+        margin: 0 0 16px 0;
+    }
+    .sectionMap_info{
+        width: calc(100% - 30px);
+        left: 15px;
+        height: auto;
     }
 }
