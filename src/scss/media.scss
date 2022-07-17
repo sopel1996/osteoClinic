@@ -4,5 +4,327 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
+$inner: 1170px;
 @import 'color.scss';
 @import 'mixins.scss';
+
+
+@media screen and (max-width: $inner){
+    .paddingBanner{
+        padding: 24px;
+    }
+    
+    .w570,.sectionBanner_yourBook{
+        width: 48% !important;
+    }
+    
+    .sectionBanner_yourBook-book{
+        width: 100%;
+        max-width: 470px;
+    }
+    .sectionBanner_yourBook-book-img{
+        height: 85%;   
+    }
+
+    .sectionInner{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .sectionBanner_title,
+    .sectionBanner_subTitle{
+        width: 640px;
+    }
+
+    .sectionAbout_img{
+        width: 320px;
+        height: auto;
+    } 
+    .sectionWhyUs_cards-item{
+        width: 220px;
+        height: 310px;
+    }
+    .sectionHowLong_stats-item{
+        margin: 0 0 30px 0;
+    }
+    .sectionSecondBanner_title{
+        width: 640px;
+    }
+    .sectionForm_form-inputField-item,
+    .sectionForm_form-inputField-btn{
+        width: 200px;
+        height: 54px;
+    }
+    .sectionSecondBanner_doc {
+        bottom: 34px;
+    }
+}
+@media screen and (max-width: $lg) {
+    .burger {display: block;}
+    body{
+        padding: 200px 0 0 0;
+    }
+    .sectionHeader{
+        height: 150px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    
+    
+    .sectionHeader_nav.active{
+        top: 100px;
+    }
+    .sectionHeader_nav{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: -500px;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        padding: 15px;
+        z-index: 999;
+        transition: all 0.5s;
+    }
+    .sectionHeader_nav-item{
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+
+    .sectionBanner{position: relative;
+    margin: 0 0 550px 0;}
+    .sectionBanner .sectionInner{
+        position: absolute;
+        bottom: -500px;
+    }
+    .sectionBanner_doc{
+        bottom: 500px;
+        left: calc(50%);
+        transform: translate(-50%);
+    }
+  
+    .sectionBanner_subTitle, .sectionBanner_title{width: 100%;}
+
+    .sectionPartners{
+        display: none;
+    }
+    .sectionAbout_paragraph:nth-child(3){
+        width: 100%;
+    }
+    .sectionAbout_paragraph:nth-child(4), .sectionAbout_paragraph:nth-child(5){
+        width: 420px;
+    }
+
+    .sectionWhyUs_cards{
+        flex-wrap: wrap;
+    }
+    .sectionActivities{margin: 0 0 30px 0;}
+    .sectionWhyUs_cards-item,
+    .sectionActivities_list-item,
+    .sectionHowLong_stats-item{
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        &:last-child,
+        &:nth-last-child(2){
+            margin: 0;
+        }
+        
+    }
+    .sectionHowLong_title,
+    .sectionHowLong_text{
+        width: 100%;
+    }
+    .sectionHowLong_stats{
+        flex-wrap: wrap;
+
+    }
+    .sectionHowLong_stats-img{
+        position: static;
+        height: auto;
+        width: calc(50% - 20px);
+        margin: 0;
+    }
+
+
+    .sectionSecondBanner .sectionInner{
+        background-size: 100% 100%;
+    }
+    .sectionSecondBanner_doc{
+        bottom: 0;
+        right: 0;
+    }
+    .sectionSecondBanner_title,
+    .sectionSecondBanner_subTitle{
+        width: 450px;
+    }
+    .sectionSecondBanner_title{
+        font-size: toRem(50);
+    }
+
+    .sectionPromotions_items{
+        flex-direction: column;
+    }
+    .sectionPromotions_items-item{
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+        &:last-child{
+            margin: 0;
+        }
+        
+    }
+    .sectionForm_form-inputField{
+        flex-wrap: wrap;
+    }
+    .sectionForm_form-inputField-btn, .sectionForm_form-inputField-item{
+        width: calc(50% - 20px);
+        margin: 0 0 20px 0;
+    }
+
+    .sectionAllPromotions_gridWrap{
+        grid-template-columns: 1fr;
+    }
+
+    .sectionBanner.aboutUs{
+        margin-bottom: 30px;    
+            background-size: 100% 56%;
+            background-position: left top;
+    }
+    .sectionBanner.aboutUs .sectionInner{
+        position: static;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .sectionBanner.aboutUs .firstCol{order: 2; margin: 95px 0 0 0;} .sectionBanner.aboutUs .slider{order: 1;}
+    .sectionBanner.aboutUs .firstCol, .sectionBanner.aboutUs .slider{
+        width: 100%;
+    }
+    .sectionBanner_text{
+        width: 100%;
+    }
+    .sectionBanner_btns{
+        flex-direction: column;
+    }
+    .sectionBanner_btns-btn,
+    .sectionBanner_btns-whatsApp{
+        width: 100%;
+        height: 56px;
+        margin: 0;
+    }
+    .sectionBanner_btns-whatsApp{
+        margin: 20px 0 0 0;
+    }
+    .sectionTextAboutUs .colText{
+        flex-direction: column;
+
+    }
+    .sectionTextAboutUs .colText_item{
+        width: 100%;
+        margin: 0 0 20px 0;
+        &:last-child{
+            margin: 0;
+        }
+    }
+
+
+    .sectionBanner.margin60.paddingBanner.heightAuto{
+        height: 500px !important;
+    }
+    .sectionInner.row.sb{
+        position: static;
+        bottom: auto !important;
+        flex-direction: column !important;
+    }
+    .sectionBanner_yourBook, .w570{
+        width: 100% !important;
+    }
+    .sectionBanner_yourBook{
+        order: 1;
+        margin: 0 0 100px 0;
+    }
+     .w570{
+        order: 2;
+     }
+     .sectionInner.row.sb{
+         height: 500px;
+         margin: 0 0 500px 0 !important;
+        }
+        .margin60{
+         margin: 0 0 500px 0 !important;
+
+     }
+
+}
+@media screen and (max-width: $md) {
+    .sectionAbout_img{position: static;}
+    .sectionAbout_paragraph:nth-child(3), .sectionAbout_paragraph:nth-child(4), .sectionAbout_paragraph:nth-child(5){
+        width: 100%;
+    }
+    .sectionActivities_list-item, .sectionHowLong_stats-item, .sectionWhyUs_cards-item{
+        width: 100%;
+    }
+    .sectionSecondBanner_doc{
+        display: none;
+    }
+    .sectionFooter_fisrt{
+        flex-direction: column;
+    }
+    .sectionForm_form-inputField-btn, .sectionForm_form-inputField-item{
+        width: 100%;
+    }
+    .sectionBanner_title,
+    .sectionSecondBanner_title{
+        font-size: toRem(29);
+    }
+    .sectionSecondBanner_subTitle, .sectionSecondBanner_title{
+        width: 100%;
+    }
+    .sectionSecondBanner-logo{
+        width: 100%;
+    }
+    .sectionSecondBanner .sectionInner{
+        height: 500px;
+    }
+    .sectionAbout_img{
+        width: 100%;
+        height: auto;
+    }
+    .sectionBanner_doc{
+        height: 100%;
+    }
+    .sectionBanner.aboutUs{
+        background-size: 100% 44%;
+    }
+    .sectionBanner_title{
+        margin: 20px 0 0 0;
+    }
+
+    .sectionBanner_yourBook-icons-items-item{
+        width: 16px;
+        height: 16px;
+    }
+    .sectionBanner_yourBook-book{
+        height: 200px;
+        background-size: 100% 100%;
+    }
+    .sectionBanner_yourBook-book-docSpec{
+        margin: 0 0 16px 0;
+    }
+    .sectionBanner_yourBook-book-docName,
+    .sectionBanner_yourBook-book-time{
+        font-size: toRem(12);
+    }
+    .sectionBanner_yourBook-book-img{
+        display: none;
+    }
+    .margin60 {
+        margin: 0 0 815px 0 !important;
+    }
+}

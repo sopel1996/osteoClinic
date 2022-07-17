@@ -27,7 +27,8 @@
             border-radius: 8px;
             &-img {
                 border-radius: 8px;
-                margin: 0 0 16px 0
+                margin: 0 0 16px 0;
+                width: 100%;
             }
             &-title {
                 @include MontserratSemiBold(24);
