@@ -2,9 +2,10 @@
 @import 'mixins.scss';
 
 .sectionBanner {
-    background     : #fff url(../img/png/firstBannerBg.png) left bottom no-repeat;
+    background     : #fff url(../img/png/firstBannerBg.png) 50% 50%/cover no-repeat #fff;;
     background-size: 100% 100%;
     height         : 500px;
+    border-radius: 32px 32px 0 0;
 
     .sectionInner {
         height         : 100%;

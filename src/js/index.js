@@ -3,8 +3,19 @@ if (document.querySelectorAll(".swiper1").length !=0){
 const swiper = new Swiper(".swiper1", {
   // Optional parameters
   direction: "horizontal",
-  slidesPerView: 5,
-  loop: false,
+  slidesPerView: 1,
+  loop: true,
+  autoplay: true,
+  breakpoints: {
+    540: {
+      slidesPerView: 3,
+    },
+    768: {
+      autoplay: false,
+      loop: false,
+      slidesPerView: 5,
+    }
+  }
 });
 }
 if (document.querySelectorAll(".mySwiper").length !=0){

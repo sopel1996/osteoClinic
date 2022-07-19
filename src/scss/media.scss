@@ -10,6 +10,7 @@ $inner: 1170px;
 
 
 @media screen and (max-width: $inner){
+
     .paddingBanner{
         padding: 24px;
     }
@@ -66,24 +67,42 @@ $inner: 1170px;
     }
 }
 @media screen and (max-width: $lg) {
+    .sectionBanner.mainBanner{
+        margin: 0 0 440px;
+    }
+    .sectionBanner.mainBanner .sectionInner {
+        bottom: -440px;
+    }
+    .sectionBanner.mainBanner .sectionBanner_doc{
+        bottom: 440px;
+    }
+   
     .burger {display: block;}
     body{
-        padding: 200px 0 0 0;
+        padding: 110px 0 0 0;
     }
     .sectionHeader{
-        height: 150px;
+        background-color: #F2F6FF;
+        // height: 150px;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 9999;
+        padding: 24px 40px;
     }
     
     
     .sectionHeader_nav.active{
-        top: 100px;
+        top: 110px;
+        opacity: 1;
     }
-    .sectionHeader_nav{
+    .sectionHeader_nav ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .sectionHeader_nav{
         position: absolute;
         left: 0;
         width: 100%;
@@ -94,14 +113,20 @@ $inner: 1170px;
         padding: 15px;
         z-index: 999;
         transition: all 0.5s;
+        opacity: 0;
     }
-    .sectionHeader_nav-item{
+    .menu-item,
+    .sectionHeader ul .menu-item-has-children, .sectionHeader_nav .menu-item-has-children{
         margin: 0 0 15px 0;
         width: 100%;
+        justify-content: flex-start;
     }
 
-    .sectionBanner{position: relative;
-    margin: 0 0 550px 0;}
+    .sectionBanner{
+        position: relative;
+        margin: 0 0 550px 0;
+        border-radius: 0;
+    }
     .sectionBanner .sectionInner{
         position: absolute;
         bottom: -500px;
@@ -110,12 +135,16 @@ $inner: 1170px;
         bottom: 500px;
         left: calc(50%);
         transform: translate(-50%);
+        height: 100%;
     }
   
     .sectionBanner_subTitle, .sectionBanner_title{width: 100%;}
 
     .sectionPartners{
         display: none;
+    }
+    .partnersAboutUs{
+        display: block;
     }
     .sectionAbout_paragraph:nth-child(3){
         width: 100%;
@@ -198,6 +227,7 @@ $inner: 1170px;
         margin-bottom: 30px;    
             background-size: 100% 56%;
             background-position: left top;
+            padding: 12px 0 0 0;
     }
     .sectionBanner.aboutUs .sectionInner{
         position: static;
@@ -209,25 +239,14 @@ $inner: 1170px;
         flex-direction: column;
     }
 
-    .sectionBanner.aboutUs .firstCol{order: 2; margin: 95px 0 0 0;} .sectionBanner.aboutUs .slider{order: 1;}
+    .sectionBanner.aboutUs .firstCol{order: 2; margin: 0 0 0 0;} .sectionBanner.aboutUs .slider{order: 1;}
     .sectionBanner.aboutUs .firstCol, .sectionBanner.aboutUs .slider{
         width: 100%;
     }
     .sectionBanner_text{
         width: 100%;
     }
-    .sectionBanner_btns{
-        flex-direction: column;
-    }
-    .sectionBanner_btns-btn,
-    .sectionBanner_btns-whatsApp{
-        width: 100%;
-        height: 56px;
-        margin: 0;
-    }
-    .sectionBanner_btns-whatsApp{
-        margin: 20px 0 0 0;
-    }
+    
     .sectionTextAboutUs .colText{
         flex-direction: column;
 
@@ -298,6 +317,53 @@ $inner: 1170px;
      }
 }
 @media screen and (max-width: $md) {
+    .sectionBanner.mainBanner{
+        margin: 0 0 562px;
+    }
+    .sectionBanner.mainBanner .sectionInner {
+        bottom: -400px;
+    }
+    .sectionBanner.mainBanner .sectionBanner_doc{
+        bottom: 400px;
+    }
+    
+    .sectionBanner.doctorsBanner .sectionBanner_doc{
+        bottom: 470px;
+    }
+    .sectionBanner.doctorsBanner .sectionInner{
+        bottom: -470px;
+    }
+    .sectionBanner.doctorsBanner {
+        margin-bottom: 700px!important
+    }
+    
+    .mySwiper{
+        display: none;
+    } 
+    .sectionBanner{
+        margin: 0 0 460px 0;
+        height: 275px;
+    }
+    .sectionBanner_btns{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sectionBanner_doc{
+        bottom: 350px;
+    }
+    .sectionBanner_btns-btn,
+    .sectionBanner_btns-whatsApp{
+        width: 100%;
+        height: 56px;
+        margin: 0;
+    }
+    .sectionBanner_btns-whatsApp{
+        margin: 20px 0 0 0;
+    }
+    .sectionBanner .sectionInner {
+        position: absolute;
+        bottom: -350px;
+    }
     .sectionAbout_img{position: static;}
     .sectionAbout_paragraph:nth-child(3), .sectionAbout_paragraph:nth-child(4), .sectionAbout_paragraph:nth-child(5){
         width: 100%;
@@ -310,6 +376,18 @@ $inner: 1170px;
     }
     .sectionFooter_fisrt{
         flex-direction: column;
+    }
+    .sectionFooter .sectionFooter_second{
+        padding: 15px;
+    }
+    .sectionFooter_Col-title{
+        margin: 0 0 16px 0;
+    }
+    .sectionFooter_firstCol,
+    .sectionFooter_secondCol,
+    .sectionFooter_thirdCol,
+    .sectionFooter_fourthCol{
+        margin: 0 0 32px 0;
     }
     .sectionForm_form-inputField-btn, .sectionForm_form-inputField-item{
         width: 100%;
@@ -331,11 +409,15 @@ $inner: 1170px;
         width: 100%;
         height: auto;
     }
+    .sectionHeader{
+        padding: 24px 0;
+        height: 110px;
+    }
     .sectionBanner_doc{
         height: 100%;
     }
     .sectionBanner.aboutUs{
-        background-size: 100% 44%;
+        background-size: 100% 35%;
     }
     .sectionBanner_title{
         margin: 20px 0 0 0;
@@ -411,5 +493,24 @@ $inner: 1170px;
         width: calc(100% - 30px);
         left: 15px;
         height: auto;
+    }
+    .sectionAllPromotions_gridWrap-item{
+        width: 100%;
+        flex-direction: column;
+    }
+    .sectionAllPromotions_gridWrap-item-img{
+        width: 100%;
+        height: 100%;
+        max-height: 226px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .sectionAllPromotions_gridWrap-item-text .sectionBanner_date,
+    .sectionAllPromotions_gridWrap-item-textTitle.aboutUs,
+    .sectionAllPromotions_gridWrap-item-textSubTitle{
+        width: 100%;
+    }
+    .sectionAllPromotions_gridWrap-item-text{
+        padding: 10px;
     }
 }
