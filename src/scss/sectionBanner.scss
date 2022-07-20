@@ -5,7 +5,7 @@
     background     : #fff url(../img/png/firstBannerBg.png) 50% 50%/cover no-repeat #fff;;
     background-size: 100% 100%;
     height         : 500px;
-    border-radius: 32px 32px 0 0;
+    border-radius: 32px;
 
     .sectionInner {
         height         : 100%;
@@ -70,7 +70,9 @@
         &-whatsApp {
             padding         : 16px 24px;
             background-color: $secondary-btn-color;
-
+            &:hover{
+                background-color: #6CBED4;
+            }
             img {
                 width : 24px;
                 height: 24px;
@@ -84,8 +86,12 @@
         right   : 0;
     }
 
+    &.mainBanner{
+        border-radius: 32px 32px 0 0;
+    }
     &.aboutUs {
         padding: 64px 0;
+        border-radius: 32px 32px 0 0;
         height : auto;
         .swiper-button-prev:after{
             content: url(../img/svg/prevBtn.svg);

@@ -45,10 +45,6 @@
                 width: 100%;
                 background-color: #fff;
                 color: $primary-color-dark;
-                &:hover{
-                    color: darken($primary-color-dark,20);
-
-                }
             }
 
             &:nth-child(2){

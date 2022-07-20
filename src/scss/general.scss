@@ -10,6 +10,8 @@
 body {
     // background-color: #F5F5F5;
     background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .sectionInner {
@@ -59,7 +61,8 @@ body {
         color 0.5s;
 
     &:hover {
-        color: darken(#fff, 20);
+        background-color: #7B3BD0;
+        color: #fff;
     }
 
     &:active {

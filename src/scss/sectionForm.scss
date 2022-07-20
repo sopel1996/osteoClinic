@@ -30,6 +30,14 @@
                 align-items: center;
                 justify-content: flex-start;
                 padding: 15px;
+                &:invalid{
+                    border-color: #E85657;
+                    color: #E85657;
+                }
+                &:valid{
+                    border-color: #60AB33;
+                    color: #60AB33;
+                }
 
             }
             .btnFill {
